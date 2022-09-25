@@ -32,7 +32,7 @@ Normalizing the data
 Splitting the data into test and train
 
 ## PROGRAM:
-'''
+```
 from google.colab import files
 uploaded = files.upload()
 
@@ -82,7 +82,7 @@ sc = StandardScaler()
 df1 = sc.fit_transform(df)
 
 print(df1)
-'''
+```
 
 
 ## OUTPUT:
