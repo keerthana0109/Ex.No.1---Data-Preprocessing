@@ -95,7 +95,24 @@ print(df1)
 
 
 ## OUTPUT:
-/ Show the result/
+![image](https://user-images.githubusercontent.com/114254543/192131319-ed941cc7-b220-4ba2-96d4-071a811118d5.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131363-c6f11813-7b07-48c8-90ec-c5f1926e8a29.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131385-7a874368-edc2-440c-b83b-9eb4e5c7058d.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131394-9ce892a1-0a9a-4e0e-98c0-d6809ca06830.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131400-97c2401b-1685-4c7c-a15f-115880687871.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131408-df0d7073-6b57-4d05-b8b7-9f6bcf83aeda.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131423-514bc110-25f7-4c94-a969-08605a188f4c.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131441-474204fd-1180-4772-a1db-c702083e4f13.png)
+
+![image](https://user-images.githubusercontent.com/114254543/192131457-f1a1af2e-9c16-4761-bb9f-e473e0b28de4.png)
+
 
 ## RESULT
-/Type your result here/
+        
