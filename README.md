@@ -1,5 +1,5 @@
 # Ex.No.1---Data-Preprocessing
-##AIM:
+## AIM:
 
 To perform Data preprocessing in a data set downloaded from Kaggle
 
@@ -23,7 +23,7 @@ For achieving better results from the applied model in Machine Learning projects
 Another aspect is that the data set should be formatted in such a way that more than one Machine Learning and Deep Learning algorithm are executed in one data set, and best out of them is chosen.
 
 
-##ALGORITHM:
+## ALGORITHM:
 Importing the libraries
 Importing the dataset
 Taking care of missing data
@@ -31,11 +31,62 @@ Encoding categorical data
 Normalizing the data
 Splitting the data into test and train
 
-##PROGRAM:
-/Write your code here/
+## PROGRAM:
+'''
+from google.colab import files
+uploaded = files.upload()
 
-##OUTPUT:
+#importing required packages
+import pandas as pd
+import io
+
+#importing our dataset
+df=pd.read_csv(io.BytesIO(uploaded['data.csv']))
+df.isnull().sum() #identifying redundant or missing values
+
+x = df['Calories'].mean() # finding the mean for 'Calories' col
+df['Calories'].fillna(x,inplace = True) # Replacing the null values with neighbouring mean value
+print(df)
+
+print(df.describe())
+
+print(df.isnull().sum())
+# It shows that we have no missing values
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# To identify the outliers by visualizing the box plot and scatter plot
+sns.boxplot(df['Calories'])
+
+y = df['Duration']
+plt.scatter(df['Calories'],y)
+
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+x=df.iloc[:,:-1].values
+y=df.iloc[:,-1].values
+
+scaler = MinMaxScaler()
+df1 = pd.DataFrame(scaler.fit_transform(df))
+
+xtrain,ytrain,xtest,ytest=train_test_split(x,y,test_size=0.2,random_state=2)
+print(len(xtrain))
+print(len(xtest))
+
+print(xtest)
+
+sc = StandardScaler()
+df1 = sc.fit_transform(df)
+
+print(df1)
+'''
+
+
+## OUTPUT:
 / Show the result/
 
-##RESULT
+## RESULT
 /Type your result here/
