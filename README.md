@@ -3,8 +3,10 @@
 
 To perform Data preprocessing in a data set downloaded from Kaggle
 
-##REQUIPMENTS REQUIRED:
+## REQUIPMENTS REQUIRED:
+
 Hardware – PCs
+
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
 ## RELATED THEORETICAL CONCEPT:
@@ -24,14 +26,21 @@ Another aspect is that the data set should be formatted in such a way that more 
 
 
 ## ALGORITHM:
+
 Importing the libraries
+
 Importing the dataset
+
 Taking care of missing data
+
 Encoding categorical data
+
 Normalizing the data
+
 Splitting the data into test and train
 
 ## PROGRAM:
+
 ```
 from google.colab import files
 uploaded = files.upload()
